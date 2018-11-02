@@ -1,6 +1,6 @@
 FROM base/archlinux
 
-RUN pacman -Syu --needed --noconfirm make clang-tools-extra python git wxgtk2 glu pkg-config boost-libs boost openmp tup valgrind && pacman -Scc --noconfirm
+RUN pacman -Syu --needed --noconfirm make clang-tools-extra python git wxgtk2 glu pkg-config boost-libs boost openmp tup valgrind gcc-fortran && pacman -Scc --noconfirm
 
 ENV CC clang
 ENV CXX clang++
