@@ -1,4 +1,4 @@
-FROM base/archlinux
+FROM archlinux/base
 
 RUN pacman -Syu --needed --noconfirm make clang-tools-extra python git wxgtk2 glu pkg-config boost-libs boost openmp tup valgrind gcc-fortran autogen glew ragel && pacman -Scc --noconfirm
 
